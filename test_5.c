@@ -1,12 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<assert.h>
-//F5-Æô¶¯µ÷ÊÔ
-//F9-ÉèÖÃ/È¡Ïû¶Ïµã
-//F10-Öğ¹ı³Ì
-//F11-ÖğÓï¾ä
+//F5-å¯åŠ¨è°ƒè¯•
+//F9-è®¾ç½®/å–æ¶ˆæ–­ç‚¹
+//F10-é€è¿‡ç¨‹
+//F11-é€è¯­å¥
 
-//ÇónµÄ½×³ËºÍ
+//æ±‚nçš„é˜¶ä¹˜å’Œ
 //int main()
 //{
 //	int n = 0;
@@ -41,7 +41,7 @@
 //	return 0; 
 //}
 
-//Ä£ÄâÊµÏÖstrcpy
+//æ¨¡æ‹Ÿå®ç°strcpy
 char* my_strcpy(char* dest, const char* src)
 {
 	//int len_dest = sizeof(dest) / sizeof(dest[0]);
@@ -51,18 +51,35 @@ char* my_strcpy(char* dest, const char* src)
 	//{
 	//	dest[i] = src[i];
 	//}
-	assert(src != NULL);//¶ÏÑÔ
+	assert(src != NULL);//æ–­è¨€
 	assert(dest != NULL);
 	char* ret = dest;
 	while (*dest++ = *src++);
-	return ret;//·µ»ØÄ¿±ê¿Õ¼äÆğÊ¼µØÖ·
+	return ret;//è¿”å›ç›®æ ‡ç©ºé—´èµ·å§‹åœ°å€
 }
 
 int main()
 {
 	char arr1[20] = "xxxxxxxxxx";
 	char arr2[] = "hello";
-	printf("%s ", my_strcpy(arr1, arr2));//Á´Ê½·ÃÎÊ
+	printf("%s ", my_strcpy(arr1, arr2));//é“¾å¼è®¿é—®
 
+	return 0;
+}
+
+//æ¨¡æ‹Ÿå®ç°strlen(æ±‚å­—ç¬¦ä¸²é•¿åº¦)
+size_t my_strlen(const char* str)//size_t - unsigned int
+{
+	assert(str != NULL);
+	size_t count = 0;
+	while (*str++ != '\0')	
+		count++;
+	return count;
+}
+
+int main()
+{
+	char arr[] = "abc";
+	printf("%d\n", my_strlen(arr));
 	return 0;
 }
