@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
+#include<stdbool.h>
 //1.输出结果是什么
 //int cnt = 0;
 //int fib(int n)
@@ -147,4 +149,165 @@
 //	float y = 2.0;
 //
 //	return 0;
+//}
+
+//int main() 
+//{
+//    char p1[15] = "abcd", * p2 = "ABCD", str[50] = "xyz";
+//    //strcpy(str + 2, strcat(p1 + 2, p2 + 1));
+//    //printf("%s", str);
+//    printf("%s", str + 2);
+//    //printf("%s", p1 + 2);
+//    //printf("%s", p2 + 1);
+//    return 0;
+//}
+
+//int main()
+//{
+//	int x = 3, y;
+//	int* px = &x;
+//	y = *px++;
+//	printf("%d %d",x, y);
+//	return 0;
+//}
+
+//int foo(int x, int y) 
+//{
+//    if (x <= 0 || y <= 0) {
+//        return 1;
+//    }
+//    if (y % 2 == 0) {
+//        return 2 * foo(x - 3, y / 3);
+//    }
+//    else {
+//        return 3 * foo(x - 2, y / 2);
+//    }
+//}
+//
+//int main()
+//{
+//    printf("%d\n", foo(9, 12));
+//    return 0;
+//}
+
+//int f(int n) {
+//    int i = 0;
+//    for (int k = 1; k <= n; k *= 2)
+//        ++i;
+//    for (int j = i / 2; j > 0; --j) {
+//        int v1 = (1 << (j - 1));
+//        int v2 = (1 << (i - j));
+//        bool flag1 = ((n & v1) != 0);
+//        bool flag2 = ((n & v2) != 0);
+//        if (flag1 != flag2) {
+//            n ^= v1;
+//            n ^= v2;
+//        }
+//    }
+//    return n;
+//}
+//
+//int main(int argc, char* argv[])
+//{
+//    printf("%d", f(3456));
+//    return 0;
+//}
+
+//int f(int n) 
+//{
+//    static int i = 1;
+//    if (n >= 5)
+//        return n;
+//    n = n + i;
+//    i++;
+//    return f(n);
+//}
+//
+//int main()
+//{
+//    printf("%d", f(1));
+//    return 0;
+//}
+
+//int fun(int x) {
+//    static int a = 3;
+//    x += a++;
+//    return x;
+//}
+//void main() 
+//{
+//    int x = 2, sum;
+//    sum = fun(x);
+//    sum = sum + fun(x);
+//    printf("%d\n", sum);
+//}
+
+//int f1(int x) 
+//{ 
+//    return x + 5; 
+//}
+//int f2(int x) 
+//{ 
+//    return 2 * x - 1; 
+//}
+//int main() 
+//{
+//    int (*p1)(int), (*p2)(int), (*t)(int), y1, y2;
+//    p1 = f1;
+//    p2 = f2;
+//    y1 = p2(p1(1));
+//    t = p1;
+//    p1 = p2;
+//    p2 = t;
+//    y2 = p2(p1(2));
+//    printf("%d, %d\n", y1, y2);
+//}
+
+//int main()
+//{
+//	int a = 12;
+//	a += a -= a * a;
+//	printf("%d", a);
+//	return 0;
+//}
+
+//int main()
+//{
+//	//int x;
+//	//int a = ((x = 4 * 5, x * 5), x + 25);
+//	int a = 4 << 2 | 3;
+//	printf("%d", a);
+//	return 0;
+//}
+
+//int f(unsigned int n) 
+//{
+//    unsigned int m = 0;
+//    for (m = 0; n; ++m) {
+//        n &= (n - 1);
+//    }
+//    return m;
+//}
+//
+//int main() 
+//{
+//   /* printf("%d\n", 2486 & 2485);*/
+//    printf("%d\n", f(2486));
+//    return 0;
+//}
+
+//int func(int x) 
+//{
+//    int countx = 0;
+//    while (x) {
+//        countx++;
+//        x = x & (x - 1);
+//    }
+//    return countx;
+//}
+//int main() 
+//{
+//    int a = func(256);
+//    printf("%d", a);
+//    return 0;
 //}
