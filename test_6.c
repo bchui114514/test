@@ -311,3 +311,102 @@
 //    printf("%d", a);
 //    return 0;
 //}
+
+//int x(int n) {
+//    int count = 0;
+//    if (n <= 3)
+//        return 1;
+//    else
+//        printf("%d\n", count);
+//        return (x(n - 2) + x(n - 4) + 1);
+//}
+//int main(void) 
+//{
+//    int count = 0;
+//    printf("%d\n", x(x(8)));
+//    return 0;
+//}
+
+//int main() 
+//{
+//    int a = 15, b = 21, m = 0;
+//    switch (a % 3) 
+//    {
+//        case 0:m++; 
+//            break;
+//        case 1:m++;
+//            switch (b % 2) 
+//            {
+//                default:m++;
+//                case 0:m++; 
+//                break;
+//            }
+//    }
+//        printf("%d\n", m);
+//        return 0;
+//}
+
+//int main()
+//{
+//	char strArray[] = "kuai-shou";
+//	printf("%d\n", sizeof(strArray));
+//	printf("%d\n", strlen(strArray));
+//	return 0;
+//}
+
+//int a, b;
+//void fun() {
+//    a = 100;
+//    b = 200;
+//}
+//
+//int main() {
+//    int a = 5, b = 7;
+//    fun();
+//    printf("%d %d\n", a, b);
+//    return 0;
+//}
+
+//int main(void) 
+//{
+//	int n;
+//	char y[10] = "ntse";
+//	char* x = y;
+//	n = strlen(x);
+//	*x = x[n];
+//	x++;
+//	printf("x=%s,", x);
+//	printf("y=%s\n", y);
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//#define n 7
+//int fun1(char s[], char a, int n) {
+//    int j;
+//    j = n;
+//    while (a < s[j] && j > 0)
+//        j--;
+//    return (j);
+//}
+//
+//int fun2(char s[], char a, int n) {
+//    int j;
+//    j = 1;
+//    while (a > s[j] && j <= n)
+//        j++;
+//    return (j);
+//}
+//
+//int main() {
+//    char s[n + 1];
+//    int k, p;
+//    for (k = 1; k <= n; k++)
+//        s[k] = 'a' + 2 * k + 1;
+//    p = fun1(s, 'm', n);
+//    cout << p + fun2(s, 'm', n) << endl;
+//
+//    return (0);
+//}
