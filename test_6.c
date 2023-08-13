@@ -410,3 +410,85 @@
 //
 //    return (0);
 //}
+
+//struct HAR 
+//{
+//    int x, y;
+//    struct HAR* p;
+//} h[2];
+//int main()
+//{
+//    h[0].x = 1;
+//    h[0].y = 2;
+//    h[1].x = 3;
+//    h[1].y = 4;
+//    h[0].p = &h[1];
+//    h[1].p = h;
+//    printf("%d,%d \n", (h[0].p)->x, (h[1].p)->y);
+//}
+
+//int main()
+//{
+//    char ch[7] = { "65ab21" };
+//    int i, s = 0;
+//    for (i = 0; ch[i] >= '0' && ch[i] <= '9'; i += 2)
+//        s = 10 * s + ch[i] - '0';
+//    printf("%d\n", s);
+//    return 0;
+//}
+
+//int main() 
+//{
+//	int a[3][4] = { {3,4},{2,8,6} };
+//	printf("%d", a[1][2]);
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%d", '0' + 1);
+//	return 0;
+//}
+
+//void main() {
+//    int a[5] = { 1, 2, 3, 4, 5 }, b[5] = { 0, 2, 1, 3, 0 }, i, s = 0;
+//    for (i = 0; i < 5; i++) 
+//        s = s + a[b[i]];
+//    printf("%d\n", s);
+//    return 0;
+//}
+
+//struct s
+//{
+//	int x : 3;
+//	int y : 4;
+//	int z : 5;
+//	double a;
+//}s1;
+//
+//int main()
+//{
+//	printf("%d\n", sizeof(s1));
+//	return 0;
+//}
+
+//int main() 
+//{
+//    int a = 1, b = 10;
+//    do {
+//        b -= a;
+//        a++;
+//    } while (b-- < 0);
+//    printf("a=%d,b=%d\n", a, b);
+//}
+
+//int main()
+//{
+//	int m = 0;
+//	for ( m = 0;m<100 ; m++)
+//	{
+//		if ((m % 3 == 2 && m % 5 == 3 && m % 7 == 2) == 1)
+//			printf("%d\n", m);
+//	}
+//	return 0;
+//}
