@@ -492,3 +492,63 @@
 //	}
 //	return 0;
 //}
+
+//void sort(int* array, int n)
+//{
+//    int i = 0;
+//    for (i = 0; i < n; i++)
+//    {
+//        printf("%d ", array[i]);
+//    }
+//}
+//
+//int main()
+//{
+//    int arr[] = { 0 };
+//    int n = 0;
+//    int i = 0;
+//    scanf("%d", &n);
+//    for (i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr[i]);
+//    }
+//    sort(arr, n);
+//    return 0;
+//}
+
+/*void reverse(char* left, char* right)
+{
+	char tmp = 0;
+	while (left<right)
+	{
+		tmp = *left;
+		*left = *right;
+		*right = tmp;
+		left++;
+		right--;
+	}
+}
+
+int main()
+{
+	char arr[100] = { 0 };
+	gets(arr);
+	int len = strlen(arr);
+	reverse(arr,arr+len-1);
+	char* start = arr;
+	while (*start)
+	{
+		char* end = start;
+		while (*end != ' ' && *end != '\0')
+		{
+			end++;
+		}
+		reverse(start, end - 1);
+		if (*end == ' ')
+			start = end + 1;
+		else
+			start = end;
+	}
+	printf("%s", arr);
+	return 0;
+}*/
